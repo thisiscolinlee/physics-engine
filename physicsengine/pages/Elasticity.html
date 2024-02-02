@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+  <meta charset="UTF-8">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <link type="text/css" href="../css/style.css" rel="stylesheet">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="icon" href="../icons/icon-512x512.png">
+
+  <title>Elasticity</title>
+
+  <script src="../libraries/matter.js"></script>
+  <script src="../libraries/p5.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+
+
+  <div class="show-content" id="top">
+
+    <div id="title-wrapper">
+      <p class="title" style="font: 400 4rem/0.85 auto; text-align: left;">
+      Elasticity
+      </p>
+      <a href="../index.html" class="subtitle" style="font: 400 2rem/1 auto;">
+        Home
+      </a>
+    </div>
+
+
+    <div class="page" style="display: flex; justify-content: center; align-items: center; width: 100vw!important; background-color: white!important;">
+              
+      <div id="canvas-wrapper" class="canvas-wrapper" style="height: 100vh!important;">
+          <div id="container1" style="width: 100vw!important;">
+            <script src="../js/InelasticCollision.js"></script>
+          </div>
+        </div>
+    
+
+      <div class="physics-description-top"></div>
+      <div id="physics-description-page">
+        <div class="tab-button-wrapper">
+          <div id="page-back" onclick="location.href='ProjectileMotion.html'">
+            <p>back</p>
+          </div>
+          <p class="tablinks" onclick="openTag(event, 'Kr')">Korean</p>
+          <div id="page-next" onclick="location.href='Ramp.html'">
+            <p>next</p>
+          </div>
+        </div>
+
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="100" cy="24" rx="40" ry="15" />
+          <ellipse cx="100" cy="40" rx="65" ry="20" />
+          <ellipse cx="100" cy="60" rx="85" ry="20" />
+          <ellipse cx="100" cy="80" rx="95" ry="20" />
+          <ellipse cx="100" cy="100" rx="100" ry="20" />
+          <ellipse cx="100" cy="120" rx="95" ry="20" />
+          <ellipse cx="100" cy="140" rx="85" ry="20" />
+          <ellipse cx="100" cy="160" rx="65" ry="20" />
+          <ellipse cx="100" cy="176" rx="40" ry="15" />
+        </svg>      
+
+        <div class="physics-description" id="box-wrapper">
+          <div id="Kr" class="tabcontent">
+            <p>탄성력은 본래의 형태를 잃은 물체가 형태를 유지할 수 있는 능력을 의미한다.
+            물체가 변형되었을 때 그 정도를 나타내는 것이 탄성계수인데, 이 탄성계수는 물체 재료의 변형도, 강성도를 나타낸다.
+            흔히 생각하는 용수철에서의 탄성력은 한 방향으로 늘고 줄기 때문에 표현이 쉽지만, 3차원에서 어떤 물체의 x,y,z축으로의 변형을
+            고려하기 때문에 이를 식으로 풀기 쉽지 않다.
+            </p>
+          </div>
+        
+          <div id="Eng" class="tabcontent">
+              <p>Elasticity refers to the ability of an object that has lost its original shape to maintain its shape.
+              When an object is deformed, the degree to which it is deformed is elastic modulus, and this elastic modulus represents the deformation and stiffness of the object material.
+              The elastic force in a spring, which is commonly thought of as a spring, is easy to express because it increases and decreases in one direction, but in 3D, the deformation of an object in the x, y, and z axes
+              It is not easy to solve this equation because it is taken into account.
+              </p>
+          </div>
+        </div>
+
+      </div>
+  
+      </div>
+  
+      <script src="../js/script.js"></script>
+    </div>
+  
+  </div>
+
+</body>

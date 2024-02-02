@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+  <meta charset="UTF-8">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <link type="text/css" href="/css/style.css" rel="stylesheet">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="icons/icon-512x512.png">
+
+  <title>Collision</title>
+
+  <script src="../libraries/matter.js"></script>
+  <script src="../libraries/p5.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+
+  <div class="show-content" id="top">
+
+    <div id="title-wrapper">
+      <p class="title" style="font: 400 4rem/0.85 auto; text-align: left;">
+      Collision
+      </p>
+      <a href="../index.html" class="subtitle" style="font: 400 2rem/1 auto;">
+        Home
+      </a>
+    </div>
+
+
+    <div class="page" style="display: flex; justify-content: center; align-items: center; width: 100vw!important; background-color: white!important;">
+              
+      <div id="canvas-wrapper" class="canvas-wrapper" style="height: 100vh!important;">
+          <div id="container1" style="width: 100vw!important;">
+            <script src="../js/Collision.js"></script>
+          </div>
+        </div>
+
+      <div class="physics-description-top"></div>
+      <div id="physics-description-page">
+        <div class="tab-button-wrapper">
+          <div id="page-back" onclick="location.href='Ramp.html'">
+            <p>back</p>
+          </div>
+          <p class="tablinks" onclick="openTag(event, 'Kr')">Korean</p>
+          <div id="page-next" onclick="location.href='../index.html'">
+            <p>next</p>
+          </div>
+        </div>
+
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="60" cy="100" rx="60" ry="100" />
+          <ellipse cx="140" cy="100" rx="60" ry="100" />
+        </svg>   
+
+        <div class="physics-description" id="box-wrapper">
+          <div id="Kr" class="tabcontent">
+            <p>
+              충돌에는 주로 두 가지 유형이 있다. 탄성 충돌과 비탄성 충돌 복원 계수(e)에 따라. e=1일 때를 탄성 충돌이라 하고, 0&#60;e&#60;1일 때를 탄성 충돌이라고 한다.
+              이를 비탄성 충돌이라고 하며, e=0인 경우를 완전 비탄성 충돌이라고 한다.
+              탄성 충돌은 계에서 운동 에너지의 손실이 없는 충돌을 의미한다. 탄성 충돌에서는 운동량과 운동 에너지가 모두가 보존된다.
+              다른 질량의 두 물체는 서로를 향해 다른 속력으로 이동한다.
+              이 충돌은 에너지의 손실이 없기 때문에 완전탄력적 이다.
+              비탄성 충돌은 시스템에서 운동 에너지가 손실되는 충돌이다. 운동량은 보존되지만 운동에너지는 보존되지 않는다.
+              일부 운동 에너지는 원자의 진동 에너지로 전환된다. 
+            </p>
+          </div>
+        
+          <div id="Eng" class="tabcontent">
+              <p>
+                There are mainly two types of collision. Elastic Collision and Inelastic Collision
+                  according to coefficient of restitution(e). When e=1, it is called an elastic collision, when 0&#60;e&#60;1, 
+                  it is called an inelastic collision, and when e=0, it is called a perfectly inelastic collision.
+                Elastic Collision is a collision in which there is no loss in kinetic energy in the system. Both momentum and kinetic energy are conserved in elastic collisions.
+                Two objects with different mass are moving toward each other with different velocity. They collide, bouncing off each other with no loss. This collision is perfectly elastic because no energy has been lost.
+                Inelastic Collision is a collision in which there is loss in kinetic energy in the system. When momentum is conserved, kinetic energy is not.
+                Some kinetic energy is turned into vibrational energy of the atoms.
+              </p>
+          </div>
+        </div>
+
+      </div>
+  
+      </div>
+  
+      <script src="../js/script.js"></script>
+    </div>
+  
+  </div>
+  
+</body>
+
+

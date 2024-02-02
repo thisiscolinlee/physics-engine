@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+  <meta charset="UTF-8">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <link type="text/css" href="../css/style.css" rel="stylesheet">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="icon" href="../icons/icon-512x512.png">
+
+  <title>Projectile Motion</title>
+
+  <script src="../libraries/matter.js"></script>
+  <script src="../libraries/p5.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+
+
+  <div class="show-content" id="top">
+
+    <div id="title-wrapper">
+      <p class="title" style="font: 400 4rem/0.85 auto; text-align: left;">
+      Projectile Motion
+      </p>
+      <a href="../index.html" class="subtitle" style="font: 400 2rem/1 auto;">
+        Home
+      </a>
+    </div>
+
+
+    <div class="page" style="display: flex; justify-content: center; align-items: center; width: 100vw!important; background-color: white!important;">
+              
+      <div id="canvas-wrapper" class="canvas-wrapper" style="height: 100vh!important;">
+          <div id="container1" style="width: 100vw!important;">
+            <script src="../js/ProjectileMotion.js"></script>
+          </div>
+        </div>
+
+      <div class="physics-description-top"></div>
+      <div id="physics-description-page">
+        <div class="tab-button-wrapper">
+          <div id="page-back" onclick="location.href='FreeFallMotion.html'">
+            <p>back</p>
+          </div>
+          <p class="tablinks" onclick="openTag(event, 'Kr')">Korean</p>
+          <div id="page-next" onclick="location.href='Elasticity.html'">
+            <p>next</p>
+          </div>
+        </div>
+
+        <svg id="right-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="0" cy="200" r="200" />
+        </svg>   
+
+        <div class="physics-description" id="box-wrapper">
+          <div id="Kr" class="tabcontent">
+            <p>중력이 존재하는 환경에서 포물선 궤적을 그리며 운동하는 것을 포물선 운동이라 한다.
+            포물선 운동에서는 수직으로 작용하는 중력 이외에 수평 방향으로도 힘이 작용한다.
+            포물선 운동을 하는 물체의 순간 속력을 구하기 위해서 물체가 이동하는 수직, 수평 방향에서의 힘을
+            각각 sin 성분과 cos 성분으로 따로 나누어 계산할 수 있다.
+          </p>
+          </div>
+        
+          <div id="Eng" class="tabcontent">
+              <p>Moving along a projectile trajectory in an environment where gravity exists is called projectile motion
+              In projectile motion, in addition to gravity acting vertically, force also engages in the horizontal direction
+              To find the instantaneous speed of an object in projectile motion, the force in the vertical and horizontal directions along which the object moves is calculated.
+              It can be calculated by dividing it into sin component and cos component, respectively.
+            </p>
+          </div>
+        </div>
+
+      </div>
+  
+      </div>
+  
+      <script src="../js/script.js"></script>
+    </div>
+  
+  </div>
+
+
+</body>

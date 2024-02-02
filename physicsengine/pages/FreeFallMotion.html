@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+  <meta charset="UTF-8">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <link type="text/css" href="../css/style.css" rel="stylesheet">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="icon" href="../icons/icon-512x512.png">
+
+  <title>Free Fall Motion</title>
+
+  <script src="../libraries/matter.js"></script>
+  <script src="../libraries/p5.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+
+  
+
+  <div class="show-content" id="top">
+
+
+    <div id="title-wrapper">
+      <p class="title" style="font: 400 4rem/0.85 auto; text-align: left;">
+      Free Fall Motion
+      </p>
+      <a href="../index.html" class="subtitle" style="font: 400 2rem/1 auto;">
+        Home
+      </a>
+    </div>
+
+
+    <div class="page" style="display: flex; justify-content: center; align-items: center; width: 100vw!important; background-color: white!important;">
+              
+      <div id="canvas-wrapper" class="canvas-wrapper" style="height: 100vh!important;">
+          <div id="container1" style="width: 100vw!important;">
+            <script src="../js/FreeFallMotion.js"></script>
+          </div>
+      </div>
+
+      <div class="physics-description-top"></div>
+      <div id="physics-description-page">
+        
+        <div class="tab-button-wrapper">
+          <div id="page-back" onclick="location.href='../index.html'">
+            <p>back</p>
+          </div>
+          <p class="tablinks" onclick="openTag(event, 'Kr')">Korean</p>
+          <div id="page-next" onclick="location.href='ProjectileMotion.html'">
+            <p>next</p>
+          </div>
+        </div>
+  
+        <div class="physics-description" id="box-wrapper">
+          <svg id="left-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="100" />
+          </svg>  
+
+          <div id="Eng" class="tabcontent">
+            <p>A free falling object is an object that is falling under the influence of gravity.
+              When universal gravitation is applied, gravitational acceleration(g) is calculated as G*M/r^.
+              In the case of Earth, all objects accelerate downwards at a rate of 9.8m/s^.
+              As free falling objects are accelerating downwards at a rate of 9.8m/s^, a ticker tape trace or a dot diagram of its motion depicts acceleration.
+            </p>
+          </div>
+        
+          <div id="Kr" class="tabcontent">
+              <p>오직 중력의 영향을 받아 낙하하는 물체의 운동을 자유 낙하 운동이라 한다.
+              만유인력을 적용하면 중력 가속도(g)는 G*M/r^로 계산한다.
+              지구의 경우, 모든 물체는 지구 방향으로 9.8m/s^의 가속도를 받아 낙하한다.
+              자유 낙하하는 물체는 9.8m/s^의 속도로 가속되므로 해당 물체의 움직임을 나타내는 종이 테이프의 흔적이나 타점 그래프는 가속도를 나타낸다.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="../js/script.js"></script>
+    </div>
+
+  </div>
+
+</body>

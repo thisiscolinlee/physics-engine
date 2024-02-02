@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+  <meta charset="UTF-8">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <link type="text/css" href="/css/style.css" rel="stylesheet">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="icons/icon-512x512.png">
+
+  <title>Ramp</title>
+
+  <script src="../libraries/matter.js"></script>
+  <script src="../libraries/p5.min.js"></script>
+
+</head>
+
+<body>
+  <div class="show-content" id="top">
+
+    <div id="title-wrapper">
+      <p class="title" style="font: 400 4rem/0.85 auto; text-align: left;">
+      Ramp
+      </p>
+      <a href="../index.html" class="subtitle" style="font: 400 2rem/1 auto;">
+        Home
+      </a>
+    </div>
+
+
+    <div class="page" style="display: flex; justify-content: center; align-items: center; width: 100vw!important; background-color: white!important;">
+              
+      <div id="canvas-wrapper" class="canvas-wrapper" style="height: 100vh!important;">
+          <div id="container1" style="width: 100vw!important;">
+            <script src="../js/Ramp.js"></script>
+          </div>
+        </div>
+
+      <div class="physics-description-top"></div>
+      <div id="physics-description-page">
+        <div class="tab-button-wrapper">
+          <div id="page-back" onclick="location.href='pages/Elasticity.html'">
+            <p>back</p>
+          </div>
+          <p class="tablinks" onclick="openTag(event, 'Kr')">Korean</p>
+          <div id="page-next" onclick="location.href='Collision.html'">
+            <p>next</p>
+          </div>
+        </div>
+
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="0,0 200,200 0,200" />
+          <circle cx="140" cy="60" r="57" />
+        </svg>   
+
+        <div class="physics-description" id="box-wrapper">
+          <div id="Kr" class="tabcontent">
+            <p>경사면에서 물체가 운동을 할 때 중력이 작용하여 수직 방향으로만 떨어지는 것이 아닌 <span id="underline">수평으로도 이동하게 된다.
+            수직, 수평 방향으로의 운동을 파악하기 위해 <span id="underline">작용된 중력을 sin 성분, cos 성분으로 나누어 각각 계산해주면 각각 경우의 속력을 알 수 있다.</p>
+          </div>
+        
+          <div id="Eng" class="tabcontent">
+              <p>When an object moves on a ramp, gravity acts so that it not only falls vertically but also moves horizontally.
+              In order to understand movement in the vertical and horizontal directions, you can find the speed in each case by dividing the applied gravity 
+              into a sin component and a cos component and calculate them respectively.
+              </p>
+          </div>
+        </div>
+
+      </div>
+  
+      </div>
+  
+      <script src="../js/script.js"></script>
+    </div>
+  
+  </div>
+  
+</body>
+
